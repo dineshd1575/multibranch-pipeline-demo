@@ -3,22 +3,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                echo 'Source Code Checked Out'
-            }
-        }
-
         stage('Build') {
             steps {
-                echo 'Building Project'
+                echo 'Building Develop Branch'
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'Running Tests'
-            }
-        }
     }
 }
